@@ -1,0 +1,133 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: black;
+}
+header
+{
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #39863d;
+    padding: 0.5rem;
+}
+header h1
+{
+    text-align: center;
+    margin-bottom: 0.7;
+    font-size: 1.5rem;
+    color: #000000;
+}
+#input_imagem{
+    width: 60rem;
+    opacity: 1;
+}
+nav
+{
+    background-color: #39863d;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+nav li
+{
+    width: 10rem;
+    list-style-type: none;
+    text-align: center;
+    padding-right: 1rem;
+}
+
+nav li a
+{
+    color: #000000;
+    text-decoration: dimgray;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav li a:hover
+{
+    color: rgb(226, 219, 219);
+}
+form{
+    display: flex;
+    justify-content: center;
+    background-color: #39863d;
+    padding-left: 3rem; padding-bottom: 1rem;
+}
+.delete{
+    background-color: rgb(32, 32, 32);
+    font-size: 1rem;
+    border-radius: 15px;
+    margin-left: 1rem;
+    color: rgb(148, 148, 148);
+    border-style: initial;
+    border-width: 0.1rem;
+    padding: 0.4rem;
+}
+.input{
+    background-color: #39863d;
+    border-color: #39863d;
+    font-size: 1rem;
+    border-radius: 15px;
+    margin-left: 1rem;
+    border-style: solid;
+    border-width: 0.01rem;
+    border-color: rgb(148, 148, 148);
+    color: black;
+    padding: 0.4rem;
+}
+main
+{
+    padding: 4rem;
+    text-align: center;
+    background-image: linear-gradient(#494949,#353535);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#imagem
+{
+    max-width: 250px;
+    max-height: 250px;
+    box-shadow: 4px 4px 8px;
+    margin: 10px;
+}
+footer
+{
+    color: rgb(168, 168, 168);
+    padding: 1rem;
+    background-image: linear-gradient(#353535, #000000);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.image_style{
+    animation: aparecer 2s ease-in-out;
+    border-radius: 12px;
+}
+.image_style:hover{
+    border-radius: 0rem;
+    transform: scale(2);
+}
+@media only screen and (max-width: 600px) {
+    body {
+      flex-direction: column;
+    }
+}
+
+@keyframes aparecer{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

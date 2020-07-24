@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Album</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="https://pics.loveforquotes.com/myaaa-70273452.png" type="image/x-icon">
+        <meta name="author" content="Paulo Dal Pont">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="HTML, CSS, JavaScript, Album, Imagens">
+        <meta name="description" content="Album de foto">
+        <link rel="stylesheet" href="trabalho.css">
+    </head>
+    <body>
+        <header>
+            <h1>Seu Album</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="sobre/sobre.html">Sobre</a></li>
+                <li><a href="URL/URL.html">O que e URL?</a></li>
+            </ul>
+        </nav>
+        <form id="add_image" name="submit">
+            <input type="url" id="link" name="link" spellcheck="true" placeholder="insira o URL da imagem" onfocus="this.value=''">
+            <button type="submit" id="submit" class="input" onerror="document.querySelector('img').src=''">Adicionar a sua imagem</button>
+            <button type="button" id="erase" class="delete">Delete o Album</button>
+        </form>
+        <main id="album">
+        </main>
+        <footer>
+            
+            <p>
+                Pagina designada a aceitar URL e salvar suas respectivas imagens/gifs
+            </p>
+        </footer>
+    </body>
+    <script src="trabalho.js"></script>
+</html>
